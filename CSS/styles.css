@@ -15,7 +15,55 @@ body {
 }
 /* стили навигации */
 .site-nav .link {
+  color: #212121;
+  text-decoration: none;
+}
+.link:focus,
+.link:hover {
+  text-decoration: none;
   color: #2196f3;
+}
+/* стили контактов */
+.link-contact {
+  color: #757575;
+  text-decoration: none;
+}
+.link-contact:focus,
+.link-contact:hover {
+  color: #2196f3;
+}
+/* стили кнопки заказать услугу */
+.btn {
+  color: #fff;
+  background-color: #2196f3;
+}
+/* герой */
+.title {
+  color: #fff;
+  background-color: #2f303a;
+}
+/*стилизация h3 h2 */
+.subjec {
+  color: #212121;
+}
+/* стилизация адресса */
+.address-box {
+  color: #fff;
+}
+/* секция футера */
+.address {
+  background-color: #2f303a;
+}
+/* портфолио кнопки */
+.pagination {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.pagination:focus,
+.pagination:hover {
+  color: #fff;
+  background-color: #2196f3;
 }
 
 /* основной цвет текста #757575 */
