@@ -1,76 +1,140 @@
+:root {
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --main-colors-text: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: (255, 255, 255, 0.6);
+  --white-color-text: #ffffff;
+  --accent: #2196f3;
+  --main-background-color: #e5e5e5;
+  --secondary-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--white-color-text);
   color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
 }
 .list {
   list-style: none;
+  font-weight: 500;
+  /* font-size: 14px;
+  line-height: 1.14px; */
+  letter-spacing: 0.02em;
+  /* list-style-type: none; */
 }
+
 /* стили логотипа */
 .logo {
   color: #000000;
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2px;
 }
+
 .logo-accent {
-  color: #2196f3;
+  color: var(--accent);
 }
 /* стили навигации */
 .site-nav .link {
-  color: #212121;
+  color: var(--secondary-text-color);
   text-decoration: none;
+  list-style-type: none;
+  font-weight: 500;
+  line-height: 1.1px;
+  letter-spacing: 0.02em;
 }
 .link:focus,
 .link:hover {
   text-decoration: none;
-  color: #2196f3;
+  color: var(--accent);
 }
 /* стили контактов */
 .link-contact {
-  color: #757575;
+  color: var(--main-colors-text);
   text-decoration: none;
+  font-weight: 500;
+  line-height: 1.1px;
+  letter-spacing: 0.02em;
 }
 .link-contact:focus,
 .link-contact:hover {
-  color: #2196f3;
+  color: var(--accent);
 }
 /* стили кнопки заказать услугу */
 .btn {
-  color: #fff;
-  background-color: #2196f3;
+  color: var(--white-color-text);
+  background-color: var(--accent);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.88px;
+  font-weight: var(--font-weight-bold);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 /* герой */
-.title {
-  color: #fff;
-  background-color: #2f303a;
+.hero {
+  background-color: var(--secondary-background-color);
 }
+
+.title {
+  color: var(--white-color-text);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: normal;
+  text-align: ce nter;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* line-height:1.36px ; */
+}
+/* ощий стильдля параграфов */
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+
 /*стилизация h3 h2 */
 .subjec {
-  color: #212121;
+  color: var(--secondary-text-color);
 }
+/* секция наша команда */
+.our-team {
+  background-color: var(--third-background-color);
+}
+
 /* стилизация адресса */
 .address-box {
-  color: #fff;
+  color: var(--white-color-text);
+  text-decoration: none;
 }
 /* секция футера */
 .address {
-  background-color: #2f303a;
+  background-color: var(--secondary-text-color);
 }
 /* портфолио кнопки */
 .pagination {
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--secondary-text-color);
+  background-color: var(--third-background-color);
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .pagination:focus,
 .pagination:hover {
-  color: #fff;
-  background-color: #2196f3;
+  color: var(--white-color-text);
+  background-color: var(--accent);
 }
-
-/* основной цвет текста #757575 */
-/* вторичний цвет текста #212121 */
-/* цвет логотипа #000000 */
-/* белый цвет текста #FFFFFF */
-/* третий цвет текста rgba(255, 255, 255, 0.6); только адрес */
-/* акцент текста #2196F3 */
-/* основной бекграунд страници #E5E5E5 */
-/* вторичный бекграунд #2F303A */
