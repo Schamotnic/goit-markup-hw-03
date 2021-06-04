@@ -1,3 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Оуталй обводка */
+a,
+span,
+h1,
+h2,
+h3,
+p,
+li,
+img,
+svg,
+button {
+  /* background-color: tomato; */
+}
+/* ширина моего блокак 1200.15рх слева и спарва для читабельности */
+
 :root {
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -20,6 +44,13 @@ body {
   font-style: normal;
   font-size: 14px;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*nav container */
+
 .list {
   list-style: none;
   font-weight: 500;
@@ -69,11 +100,14 @@ body {
 }
 /* стили кнопки заказать услугу */
 .btn {
+  display: inline-block;
+  border-radius: 4px;
   color: var(--white-color-text);
   background-color: var(--accent);
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
+  padding: 10 32px;
 }
 
 /* герой */
