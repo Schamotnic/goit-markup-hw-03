@@ -18,7 +18,7 @@ li,
 img,
 svg,
 button {
-  border: solid tomato;
+  /* background-color: tomato; */
 }
 /* ширина моего блокак 1200.15рх слева и спарва для читабельности */
 
@@ -53,10 +53,11 @@ body {
 /*nav container */
 
 .list {
+  display: block;
   list-style: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
 }
@@ -69,12 +70,17 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
+.address > a {
+  color: var(--white-color-text);
+}
 
 .logo-accent {
   color: var(--accent);
 }
 /* стили навигации */
 .site-nav .link {
+  margin: 0;
+  display: block;
   color: var(--secondary-text-color);
   text-decoration: none;
   list-style-type: none;
@@ -82,13 +88,16 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+.link.active,
 .link:focus,
 .link:hover {
   text-decoration: none;
   color: var(--accent);
 }
+
 /* стили контактов */
 .link-contact {
+  font-style: normal;
   color: var(--main-colors-text);
   text-decoration: none;
   font-weight: 500;
@@ -101,60 +110,42 @@ body {
 }
 /* стили кнопки заказать услугу */
 .btn {
-  display: block;
-
-  text-align: center;
+  border: 0px;
+  display: inline-block;
   border-radius: 4px;
   color: var(--white-color-text);
   background-color: var(--accent);
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
-}
-/* .content { */
-  height: 600px;
-}
-
-.hero  .btn {
-  padding-bottom: 200px;
-  height: 50px;
-  padding: 10px 32px;
-  display: block;
-  text-align: center;
+  padding: 10 32px;
 }
 
 /* герой */
 .hero {
   background-color: var(--secondary-background-color);
+  margin-top: 0px;
 }
 
 .title {
-  
-  /* display: block; */
-  /* margin-bottom: 30px; */
-  text-align: center;
+  margin-top: 0px;
   color: var(--white-color-text);
   font-weight: 900;
   font-size: 44px;
   line-height: normal;
-  text-align: center;
+  text-align: ce nter;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.36;
 }
-
-.hero-title {
-  text-align: center;
-}
-
 /* ощий стильдля параграфов */
 .text {
   margin-top: 0;
   margin-bottom: 0;
-
-  /* or 171% */
-
   letter-spacing: 0.03em;
+}
+h3 {
+  text-transform: uppercase;
 }
 
 /*стилизация h3 h2 */
@@ -168,6 +159,7 @@ body {
 
 /* стилизация адресса */
 .address-box {
+  font-style: normal;
   color: var(--white-color-text);
   text-decoration: none;
 }
@@ -175,16 +167,25 @@ body {
 .address {
   background-color: var(--secondary-text-color);
 }
+.address > a {
+  color: var(--white-color-text);
+}
+
 /* портфолио кнопки */
 .pagination {
+  border: 0px;
   color: var(--secondary-text-color);
   background-color: var(--third-background-color);
-  width: 128px;
-  height: 38px;
   left: 576px;
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+.list-pagination {
+  color: #ffffff;
+  background-color: var(--accent);
+  border: 0px;
 }
 
 .pagination:focus,
