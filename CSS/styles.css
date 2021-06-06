@@ -18,7 +18,7 @@ li,
 img,
 svg,
 button {
-  /* background-color: tomato; */
+  border: solid tomato;
 }
 /* ширина моего блокак 1200.15рх слева и спарва для читабельности */
 
@@ -48,16 +48,17 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /*nav container */
 
 .list {
   list-style: none;
   font-weight: 500;
-  /* font-size: 14px;
-  line-height: 1.14px; */
+  font-size: 14px;
+  line-height: 1.14px;
   letter-spacing: 0.02em;
-  /* list-style-type: none; */
+  list-style-type: none;
 }
 
 /* стили логотипа */
@@ -100,14 +101,26 @@ body {
 }
 /* стили кнопки заказать услугу */
 .btn {
-  display: inline-block;
+  display: block;
+
+  text-align: center;
   border-radius: 4px;
   color: var(--white-color-text);
   background-color: var(--accent);
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
-  padding: 10 32px;
+}
+/* .content { */
+  height: 600px;
+}
+
+.hero  .btn {
+  padding-bottom: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  display: block;
+  text-align: center;
 }
 
 /* герой */
@@ -116,15 +129,24 @@ body {
 }
 
 .title {
+  
+  /* display: block; */
+  /* margin-bottom: 30px; */
+  text-align: center;
   color: var(--white-color-text);
   font-weight: 900;
   font-size: 44px;
   line-height: normal;
-  text-align: ce nter;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* line-height:1.36px ; */
+  line-height: 1.36;
 }
+
+.hero-title {
+  text-align: center;
+}
+
 /* ощий стильдля параграфов */
 .text {
   margin-top: 0;
