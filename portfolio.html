@@ -21,30 +21,35 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <a href="WebStudio" class="logo"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <!-- Основная навигация  -->
+      <section>
         <nav>
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li>
-              <a href="./portfolio.html" class="link active">Портфолио</a>
-            </li>
-            <li><a href="" class="link">Контакты</a></li>
-          </ul>
+          <div class="nav-box">
+            <a href="WebStudio" class="logo"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
+            <!-- Основная навигация  -->
+            <ul class="site-nav list">
+              <li class="items">
+                <a href="./index.html" class="link">Студия</a>
+              </li>
+              <li class="items">
+                <a href="./portfolio.html" class="link active">Портфолио</a>
+              </li>
+              <li class="items"><a href="" class="link">Контакты</a></li>
+            </ul>
+            <a href="mailto:info@devstudio.com" class="link-contact"
+              >info@devstudio.com</a
+            >
+
+            <a href="tel:+380961111111" class="link-contact telephon"
+              >+38 096 111 11 11</a
+            >
+          </div>
         </nav>
-        <div>
-          <a href="mailto:info@devstudio.com" class="link-contact"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a>
-        </div>
-      </div>
+      </section>
     </header>
     <main>
-      <section>
+      <section class="section">
         <div class="container">
           <div>
             <!-- Навигация по сранице портфолио -->
@@ -52,16 +57,16 @@
               <li>
                 <button type="button" class="list-pagination">Все</button>
               </li>
-              <li>
+              <li class="website-btn">
                 <button type="button" class="pagination">Веб-сайты</button>
               </li>
-              <li>
+              <li class="application">
                 <button type="button" class="pagination">Приложения</button>
               </li>
-              <li>
+              <li class="design-bnt">
                 <button type="button" class="pagination">Дизайн</button>
               </li>
-              <li>
+              <li class="marketing-btn">
                 <button type="button" class="pagination">Маркетинг</button>
               </li>
             </ul>
@@ -163,22 +168,26 @@
       </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="address">
-          <a href="WebStudio" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <address>
-            <a href="" class="address-box"> г. Киев, пр-т Леси Украинки, 26</a>
-            <a href="mailto:info@example.com" class="link-contact"
-              >info@example.com</a
+      <section class="section">
+        <div class="container">
+          <div class="address">
+            <a href="WebStudio" class="logo"
+              ><span class="logo-accent">Web</span>Studio</a
             >
-            <a href="tel:+380991111111" class="link-contact"
-              >+38 099 111 11 11</a
-            >
-          </address>
+            <address>
+              <a href="" class="address-box">
+                г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <a href="mailto:info@example.com" class="link-contact"
+                >info@example.com</a
+              >
+              <a href="tel:+380991111111" class="link-contact"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
