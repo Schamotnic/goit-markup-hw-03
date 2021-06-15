@@ -18,7 +18,7 @@ li,
 img,
 svg,
 button {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 }
 /* ширина моего блокак 1200.15рх слева и спарва для читабельности */
 
@@ -69,10 +69,69 @@ body {
   border: 1px solid #ececec;
   height: 80px;
 }
-.list {
+
+.list-text {
   display: flex;
   padding: 0px;
+  /* margin: 0px 0px 188px 0px; */
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+.list-button {
+  margin: 0px 0px;
+  display: flex;
+  padding: 0px;
+  /* margin: 0px 0px 188px 0px; */
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+/* стилизация  контейнера портфолио карточек */
+
+.container-card {
+  width: 1200px;
+
+  padding: 0px px;
+  margin: auto;
+  display: flex;
+}
+/* тилизация списка карточек портфолио */
+.list-card {
+  width: 1200px;
+  /* outline: 1px solid tomato; */
+  margin-top: -30px;
+  margin-left: -30px;
   margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+
+.list-card > .card {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.list {
+  /* margin: 0px 0px; */
+  display: flex;
+  padding: 0px;
+  /* margin: 0px 0px 188px 0px; */
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -131,8 +190,15 @@ body {
 }
 
 /* стили контактов */
-.link-contact {
+
+.nav-box > .post {
   margin-left: 331px;
+}
+.nav-box > .telephon {
+  margin-left: 50px;
+}
+
+.link-contact {
   padding: 15px 0px;
   font-style: normal;
   color: var(--main-colors-text);
@@ -144,10 +210,6 @@ body {
 .link-contact:focus,
 .link-contact:hover {
   color: var(--accent);
-}
-
-.telephon {
-  margin-left: 50px;
 }
 
 /* стили кнопки заказать услугу */
@@ -164,7 +226,7 @@ body {
 }
 
 .hero > .btn {
-  margin-left: 500px;
+  margin-left: 650px;
   margin-bottom: 200px;
   width: 200px;
   height: 50px;
@@ -191,7 +253,13 @@ body {
   line-height: 1.36;
 }
 /* ощий стильдля параграфов */
-.text {
+
+.list-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.text-subjec {
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 0.03em;
@@ -201,7 +269,9 @@ h3 {
 }
 
 /*стилизация h3 h2 */
+
 .subjec {
+  margin-bottom: 20px;
   margin: 0px;
   color: var(--secondary-text-color);
 }
@@ -210,21 +280,94 @@ h3 {
 .list-subjec {
   width: 270px;
 }
-.list .list-subjec + .list-subjec {
+.list-text .list-subjec + .list-subjec {
   margin-left: 30px;
 }
 
 .text-subjec {
   margin: 10px 0px 0px 0px;
 }
+/* стилизация блока чем мы занимаемся */
+
+.list .pictures {
+  margin: 0px 0px 188px 0px;
+}
+
+.subje-h2 {
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.img {
+  display: block;
+}
+
+.list .img + .img {
+  margin-left: 30px;
+}
 
 /* секция наша команда */
+.subjec {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.subjec,
+.text {
+  text-align: center;
+}
+
+.team .person + .person {
+  margin-left: 30px;
+}
+
 .our-team {
   background-color: var(--third-background-color);
 }
+.subject-h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
 
 /* стилизация адресса */
+.blok-footer {
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  margin-left: 215px;
+}
+
+.logo-footer {
+  margin-left: 215px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.link-contact .telefon {
+  margin-left: 50px;
+  padding: 0px;
+  display: block;
+  /* margin-bottom: 9px; */
+}
+
+.link-contact {
+  padding: 0px;
+  display: block;
+  margin-bottom: 9px;
+}
+
 .address-box {
+  display: block;
+  margin-bottom: 9px;
+
   font-style: normal;
   color: var(--white-color-text);
   text-decoration: none;
@@ -236,8 +379,25 @@ h3 {
 .address > a {
   color: var(--white-color-text);
 }
-
+.logo-footer {
+  margin-bottom: 20px;
+  padding-top: 60px;
+  display: block;
+}
 /* портфолио кнопки */
+
+.type {
+  margin-bottom: 50px;
+}
+
+.list-button {
+  margin-left: 495px;
+}
+
+.list-button .type + .type {
+  margin-left: 8px;
+}
+
 .pagination {
   text-align: center;
   padding: 6px 22px;
@@ -250,13 +410,13 @@ h3 {
   background: #f5f4fa;
   border-radius: 4px;
 }
-.list .list-pagination {
+.list-pagination {
   text-align: center;
   min-width: 73px;
   height: 38px;
   border-radius: 4px;
   padding: 6px 22px;
-  display: inline-block;
+  /* display: inline-block; */
   color: #ffffff;
   background-color: var(--accent);
   border: 0px;
