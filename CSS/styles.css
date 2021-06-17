@@ -7,20 +7,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/* Оуталй обводка */
-a,
-span,
-h1,
-h2,
-h3,
-p,
-li,
-img,
-svg,
-button {
-  /* border: 1px solid tomato; */
-}
-/* ширина моего блокак 1200.15рх слева и спарва для читабельности */
 
 :root {
   --font-weight-regular: 400;
@@ -73,7 +59,6 @@ body {
 .list-text {
   display: flex;
   padding: 0px;
-  /* margin: 0px 0px 188px 0px; */
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -81,11 +66,11 @@ body {
   letter-spacing: 0.02em;
   list-style-type: none;
 }
+
 .list-button {
   margin: 0px 0px;
   display: flex;
   padding: 0px;
-  /* margin: 0px 0px 188px 0px; */
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -93,19 +78,19 @@ body {
   letter-spacing: 0.02em;
   list-style-type: none;
 }
+
 /* стилизация  контейнера портфолио карточек */
 
 .container-card {
   width: 1200px;
-
   padding: 0px px;
   margin: auto;
   display: flex;
 }
+
 /* тилизация списка карточек портфолио */
 .list-card {
   width: 1200px;
-  /* outline: 1px solid tomato; */
   margin-top: -30px;
   margin-left: -30px;
   margin: 0px;
@@ -123,7 +108,6 @@ body {
 .list-card > .card {
   margin-top: 30px;
   margin-left: 30px;
-
   flex-basis: calc(100% / 3 - 30px);
 }
 
@@ -131,7 +115,6 @@ body {
   margin: 0px 0px;
   display: flex;
   padding: 0px;
-  /* margin: 0px 0px 188px 0px; */
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -178,7 +161,6 @@ body {
 }
 
 .site-nav .items + .items {
-  /* padding: 32px 0px; */
   margin-left: 50px;
 }
 
@@ -227,25 +209,28 @@ body {
 }
 
 .btn {
+  display: block;
   margin: auto;
   width: 200px;
   height: 50px;
 }
 
 /* герой */
+
+.button-hero {
+  margin: auto;
+}
+
 .section-hero {
   padding: 200px 0px;
   background-color: var(--secondary-background-color);
 }
 
 .hero {
-  /* background-color: var(--secondary-background-color); */
-  margin-top: 0px;
 }
 
 .title {
   margin-bottom: 30px;
-
   margin-top: 0px;
   color: var(--white-color-text);
   font-weight: 900;
@@ -256,6 +241,7 @@ body {
   text-transform: uppercase;
   line-height: 1.36;
 }
+
 /* ощий стильдля параграфов */
 
 .list-text {
@@ -268,6 +254,7 @@ body {
   margin-bottom: 0;
   letter-spacing: 0.03em;
 }
+
 h3 {
   text-transform: uppercase;
 }
@@ -284,6 +271,7 @@ h3 {
 .list-subjec {
   width: 270px;
 }
+
 .list-text .list-subjec + .list-subjec {
   margin-left: 30px;
 }
@@ -319,9 +307,8 @@ h3 {
 }
 
 .subjec {
-  margin-top: 20px;
-  margin-bottom: 4px;
 }
+
 .text {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -348,14 +335,11 @@ h3 {
 /* стилизация адресса */
 .blok-footer {
   display: block;
-  /* margin-top: 20px; */
-  /* padding-bottom: 60px; */
-  /* margin-left: 215px; */
   margin: auto;
 }
 
 .logo-footer {
-  /* margin-left: 215px; */
+  margin-bottom: 20px;
   padding: 0px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -366,7 +350,6 @@ h3 {
   margin-left: 50px;
   padding: 0px;
   display: block;
-  /* margin-bottom: 9px; */
 }
 
 .link-contact {
@@ -378,11 +361,11 @@ h3 {
 .address-box {
   display: block;
   margin-bottom: 9px;
-
   font-style: normal;
   color: var(--white-color-text);
   text-decoration: none;
 }
+
 /* секция футера */
 .footer-address {
   background-color: var(--secondary-background-color);
@@ -396,11 +379,11 @@ h3 {
 .address > a {
   color: var(--white-color-text);
 }
+
 .logo-footer {
-  /* margin-bottom: 20px;
-  padding-top: 60px; */
   display: block;
 }
+
 /* портфолио кнопки */
 
 .list-button {
@@ -430,15 +413,16 @@ h3 {
   height: 38px;
   border-radius: 4px;
   padding: 6px 22px;
-  /* display: inline-block; */
   color: #ffffff;
   background-color: var(--accent);
   border: 0px;
 }
+
 .website-btn > .pagination {
   min-width: 128px;
   height: 38px;
 }
+
 .application-btn > .pagination {
   display: inline-block;
   min-width: 145px;
@@ -450,11 +434,13 @@ h3 {
   min-width: 145px;
   height: 38px;
 }
+
 .design-bnt > .pagination {
   display: inline-block;
   min-width: 103px;
   height: 38px;
 }
+
 .marketing-btn > .pagination {
   display: inline-block;
   min-width: 130px;
