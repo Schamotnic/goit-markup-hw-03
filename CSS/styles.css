@@ -128,7 +128,7 @@ body {
 }
 
 .list {
-  /* margin: 0px 0px; */
+  margin: 0px 0px;
   display: flex;
   padding: 0px;
   /* margin: 0px 0px 188px 0px; */
@@ -214,6 +214,8 @@ body {
 
 /* стили кнопки заказать услугу */
 .btn {
+  padding: 10px 32px;
+  margin: auto;
   border: 0px;
   display: inline-block;
   border-radius: 4px;
@@ -222,26 +224,28 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
-  /* margi n-bottom: 200px; */
 }
 
-.hero > .btn {
-  margin-left: 650px;
-  margin-bottom: 200px;
+.btn {
+  margin: auto;
   width: 200px;
   height: 50px;
 }
 
 /* герой */
-.hero {
+.section-hero {
+  padding: 200px 0px;
   background-color: var(--secondary-background-color);
+}
+
+.hero {
+  /* background-color: var(--secondary-background-color); */
   margin-top: 0px;
 }
 
 .title {
-  margin-bottom: 100px;
-  padding-top: 200px;
   margin-bottom: 30px;
+
   margin-top: 0px;
   color: var(--white-color-text);
   font-weight: 900;
@@ -308,6 +312,12 @@ h3 {
 }
 
 /* секция наша команда */
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+
 .subjec {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -338,13 +348,14 @@ h3 {
 /* стилизация адресса */
 .blok-footer {
   display: block;
-  margin-top: 20px;
-  padding-bottom: 60px;
-  margin-left: 215px;
+  /* margin-top: 20px; */
+  /* padding-bottom: 60px; */
+  /* margin-left: 215px; */
+  margin: auto;
 }
 
 .logo-footer {
-  margin-left: 215px;
+  /* margin-left: 215px; */
   padding: 0px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -373,25 +384,28 @@ h3 {
   text-decoration: none;
 }
 /* секция футера */
+.footer-address {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
-  background-color: var(--secondary-text-color);
+  margin-left: 215px;
 }
 .address > a {
   color: var(--white-color-text);
 }
 .logo-footer {
-  margin-bottom: 20px;
-  padding-top: 60px;
+  /* margin-bottom: 20px;
+  padding-top: 60px; */
   display: block;
 }
 /* портфолио кнопки */
 
-.type {
-  margin-bottom: 50px;
-}
-
 .list-button {
-  margin-left: 495px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .list-button .type + .type {
