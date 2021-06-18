@@ -35,6 +35,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: var(--font-weight-regular);
 }
 
 .container {
@@ -53,7 +55,7 @@ body {
   display: flex;
   align-items: center;
   border: 1px solid #ececec;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .list-text {
@@ -121,6 +123,24 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
+}
+
+.caption {
+  margin: 0px;
+  padding: 20px 24px 4px 24px;
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.subtitle {
+  padding: 0px 24px 20px 24px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
 }
 
 /* стили логотипа */
@@ -250,6 +270,10 @@ body {
 }
 
 .text-subjec {
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: 1.71;
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 0.03em;
@@ -262,6 +286,8 @@ h3 {
 /*стилизация h3 h2 */
 
 .subjec {
+  font-weight: var(--font-weight-bold);
+  line-height: 1.17;
   margin-bottom: 20px;
   margin: 0px;
   color: var(--secondary-text-color);
@@ -278,17 +304,16 @@ h3 {
 
 .text-subjec {
   margin: 10px 0px 0px 0px;
+  line-height: 1.71;
 }
 /* стилизация блока чем мы занимаемся */
 
-.list .pictures {
-  margin: 0px 0px 188px 0px;
+.section-work {
+  padding: 0px 0px 94px 0px;
 }
 
-.subje-h2 {
-  margin: 0px 0px 50px 0px;
-  text-align: center;
-  color: var(--secondary-text-color);
+.list .pictures {
+  margin: 0px 0px 188px 0px;
 }
 
 .img {
@@ -300,13 +325,39 @@ h3 {
 }
 
 /* секция наша команда */
+
+.subject-h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.16;
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
-.subjec {
+.subject-h3 {
+  padding: 30px 0px 0px 0px;
+  margin: 0px;
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.text-p {
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
+  color: var(--main-colors-text);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
 .text {
@@ -332,7 +383,7 @@ h3 {
   color: var(--secondary-text-color);
 }
 
-/* стилизация адресса */
+/* стилизация адресса футера */
 .blok-footer {
   display: block;
   margin: auto;
@@ -366,7 +417,8 @@ h3 {
   text-decoration: none;
 }
 
-/* секция футера */
+/* Секция футера */
+
 .footer-address {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
@@ -407,6 +459,7 @@ h3 {
   background: #f5f4fa;
   border-radius: 4px;
 }
+
 .list-pagination {
   text-align: center;
   min-width: 73px;
