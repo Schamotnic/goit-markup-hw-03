@@ -46,16 +46,14 @@ body {
 }
 
 /*стили навигации */
-
-.nav {
-  border: 1px solid #ececec;
-  height: 80px;
+.page {
+  border-bottom: 1px solid #ececec;
 }
+
 .nav-box {
+  margin: auto;
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
-  /* height: 80px; */
 }
 
 .list-text {
@@ -79,6 +77,19 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
+}
+
+/* стилизация почты и телефонав хедерре портфолио */
+
+.link-post {
+  margin-left: 315px;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.link-telephon {
+  margin-left: 50px;
 }
 
 /* стилизация  контейнера портфолио карточек */
@@ -125,9 +136,12 @@ body {
   list-style-type: none;
 }
 
+.caption-subtitle {
+  padding: 20px 24px;
+}
+
 .caption {
-  margin: 0px;
-  padding: 20px 24px 4px 24px;
+  margin: 0px 0px 4px 0px;
   color: var(--secondary-text-color);
   font-weight: var(--font-weight-bold);
   font-size: 18px;
@@ -135,8 +149,8 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
 }
+
 .subtitle {
-  padding: 0px 24px 20px 24px;
   margin: 0px;
   font-size: 16px;
   line-height: 1.87;
@@ -148,7 +162,7 @@ body {
   padding-bottom: 25px;
   padding-top: 24px;
   margin-right: 93px;
-  margin-left: 215px;
+  /* margin-left: 215px; */
   color: #000000;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -164,8 +178,6 @@ body {
   color: var(--accent);
 }
 
-.items {
-}
 /* стили навигации */
 
 .site-nav .link {
@@ -193,15 +205,8 @@ body {
 
 /* стили контактов */
 
-.nav-box > .post {
-  margin-left: 331px;
-}
-.nav-box > .telephon {
-  margin-left: 50px;
-}
-
 .link-contact {
-  padding: 15px 0px;
+  padding: 0px;
   font-style: normal;
   color: var(--main-colors-text);
   text-decoration: none;
@@ -244,9 +249,6 @@ body {
 .section-hero {
   padding: 200px 0px;
   background-color: var(--secondary-background-color);
-}
-
-.hero {
 }
 
 .title {
@@ -383,11 +385,7 @@ h3 {
   color: var(--secondary-text-color);
 }
 
-/* стилизация адресса футера */
-.blok-footer {
-  display: block;
-  margin: auto;
-}
+/* стилизация  футера */
 
 .logo-footer {
   margin-bottom: 20px;
@@ -396,17 +394,6 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
-}
-.link-contact .telefon {
-  margin-left: 50px;
-  padding: 0px;
-  display: block;
-}
-
-.link-contact {
-  padding: 0px;
-  display: block;
-  margin-bottom: 9px;
 }
 
 .address-box {
@@ -417,23 +404,23 @@ h3 {
   text-decoration: none;
 }
 
-/* Секция футера */
-
 .footer-address {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.address {
-  margin-left: 215px;
-}
-.address > a {
-  color: var(--white-color-text);
-}
-
 .logo-footer {
   display: block;
+}
+
+.link-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}
+.item-mail {
+  margin-bottom: 9px;
 }
 
 /* портфолио кнопки */
